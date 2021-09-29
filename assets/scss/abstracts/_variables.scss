@@ -1,0 +1,62 @@
+/**
+* Colors
+*
+* Название переменной конкретного цвета генерируется через сервис: http://chir.ag/projects/name-that-color/.
+* Значение цвета всегда указывается в HEX-формате в нижнем регистре (кроме исключительных случаев).
+*/
+// Пример указания цветов
+$outer-space: #202f2f;
+
+$color-text: $outer-space;
+
+
+
+/**
+* Fonts
+*/
+$font-size-base: 16px;
+
+
+
+/**
+* Breakpoints
+*/
+// Пример указания медиазапросов, затем можно использовать ее как '@media #{$screen-medium} {...}'
+$screen-medium: '(min-width: 768px)';
+
+
+
+/**
+* Layout
+*/
+
+
+
+/**
+* Sizes
+*/
+
+
+
+/**
+* Transitions and Animations
+*/
+
+
+
+/**
+* Radius
+*/
+
+
+
+/**
+* Box-shadows
+*/
+
+
+
+/**
+* Z-indexes
+*/
+
