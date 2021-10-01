@@ -5,38 +5,74 @@
 * Значение цвета всегда указывается в HEX-формате в нижнем регистре (кроме исключительных случаев).
 */
 // Пример указания цветов
-$outer-space: #202f2f;
+// $outer-space: #202f2f;
+// $color-text: $outer-space;
 
-$color-text: $outer-space;
+// Переменные со статическими цветами
+$bunker: #121920;
+$white: #ffffff;
+$heather: #bbc4d6;
+$slate-gray: #768298;
+$curious-blue: #34aadd;
+$wind-blue-yonder: #6680ae;
+$tundora: #4b4b4b;
+$carnation: #f95a59;
+$cerise-red:#dc2c53;
+$tapestry: #a7507b;
+$athens-gray: #ebebf1;
 
+// Динамические цветовые переменные
+$color-text-main: $bunker;
+$color-text-main-inverse: $white;
+$color-text-main-medium: $heather;
+$color-text-main-medium-dark: $slate-gray;
 
+$color-background: $white;
 
 /**
 * Fonts
 */
-$font-size-base: 16px;
 
-$font-path: "../../fonts";
+$font-path: "./../fonts";
 $font-family-default: "Arial", "Helvetica", sans-serif;
 $font-family-custom: "Roboto";
 $font-Regular: "Regular";
 $font-Medium: "Medium";
+
 $font-weight-regular: 400;
 $font-weight-medium: 500;
+
+$font-size-default: 16px;
+$font-size-very-huge: rem(36px);
+$font-size-huge: rem(30px);
+$font-size-large: rem(24px);
+$font-size-medium: rem(18px);
+$font-size-normal: rem(16px);
+$font-size-small: rem(14px);
+$font-size-very-small: rem(12px);
+
+$line-height-huge: 200%;
+$line-height-large: 167%;
+$line-height-medium: 130%;
+$line-height-normal: 127%;
+$line-height-small: 117%;
 
 /**
 * Breakpoints
 */
 // Пример указания медиазапросов, затем можно использовать ее как '@media #{$screen-medium} {...}'
-$screen-medium: '(min-width: 768px)';
-
+$screen-tablet: '(min-width: 768px)';
+$screen-desktop: '(min-width: 1280px)';
 
 
 /**
 * Layout
 */
-
-
+$margin-huge: 110px;
+$margin-big: 100px;
+$margin-medium: 59px;
+$margin-normal: 50px;
+$margin-small: 20px;
 
 /**
 * Sizes
