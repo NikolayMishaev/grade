@@ -31,11 +31,11 @@ $color-background-block: $white;
     Fonts
 */
 
-$font-path: './../fonts';
-$font-family-default: 'Arial', 'Helvetica', sans-serif;
-$font-family-custom: 'Roboto';
-$font-Regular: 'Regular';
-$font-Medium: 'Medium';
+$font-path: "./../fonts";
+$font-family-default: "Arial", "Helvetica", sans-serif;
+$font-family-custom: "Roboto";
+$font-Regular: "Regular";
+$font-Medium: "Medium";
 
 $font-weight-regular: 400;
 $font-weight-medium: 500;
@@ -60,8 +60,8 @@ $line-height-small: 117%;
     Breakpoints
 */
 
-$screen-tablet: '(min-width: 768px)';
-$screen-desktop: '(min-width: 1280px)';
+$screen-tablet: "(min-width: 768px)";
+$screen-desktop: "(min-width: 1280px)";
 
 /*
     Layout
