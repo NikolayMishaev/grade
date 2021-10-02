@@ -4,7 +4,7 @@
 
 // Переменные со статическими цветами
 $bunker: #121920;
-$white: #ffffff;
+$white: #fff;
 $heather: #bbc4d6;
 $slate-gray: #768298;
 $curious-blue: #34aadd;
@@ -22,7 +22,7 @@ $color-text-main-inverse: $white;
 $color-text-main-medium: $heather;
 $color-text-main-medium-dark: $slate-gray;
 
-$color-link-main:$curious-blue;
+$color-link-main: $curious-blue;
 
 $color-background-main: $alabaster;
 $color-background-block: $white;
@@ -31,11 +31,11 @@ $color-background-block: $white;
     Fonts
 */
 
-$font-path: "./../fonts";
-$font-family-default: "Arial", "Helvetica", sans-serif;
-$font-family-custom: "Roboto";
-$font-Regular: "Regular";
-$font-Medium: "Medium";
+$font-path: './../fonts';
+$font-family-default: 'Arial', 'Helvetica', sans-serif;
+$font-family-custom: 'Roboto';
+$font-Regular: 'Regular';
+$font-Medium: 'Medium';
 
 $font-weight-regular: 400;
 $font-weight-medium: 500;
@@ -60,8 +60,8 @@ $line-height-small: 117%;
     Breakpoints
 */
 
-$screen-tablet: "(min-width: 768px)";
-$screen-desktop: "(min-width: 1280px)";
+$screen-tablet: '(min-width: 768px)';
+$screen-desktop: '(min-width: 1280px)';
 
 /*
     Layout
@@ -100,7 +100,7 @@ $border-radius-medium: 5px;
     Box-shadows
 */
 
-$box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.03), 0px 3px 10px rgba(164, 164, 164, 0.03);
+$box-shadow: 0 12px 40px rgba(0, 0, 0, .03), 0 3px 10px rgba(164, 164, 164, .03);
 
 /*
     Z-indexes
