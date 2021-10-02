@@ -1,13 +1,64 @@
 @mixin object-fit($fit: fill, $position: null) {
     -o-object-fit: $fit;
-    object-fit: $fit;
+       object-fit: $fit;
 
     @if $position {
         font-family: "object-fit: #{$fit}; object-position: #{$position}";
 
         -o-object-position: $position;
-        object-position: $position;
+           object-position: $position;
     } @else {
         font-family: "object-fit: #{$fit}";
+    }
+}
+
+@mixin heading-huge {
+    font-size: $font-size-huge;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-medium;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-very-huge;
+    }
+}
+
+@mixin heading-large {
+    font-size: rem(20px);
+    font-weight: $font-weight-medium;
+    line-height: 120%;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-large;
+    }
+}
+
+@mixin heading-medium {
+    font-size: $font-size-normal;
+    font-weight: $font-weight-medium;
+    line-height: 150%;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-medium;
+    }
+}
+
+@mixin heading-normal {
+    font-size: $font-size-normal;
+    font-weight: $font-weight-medium;
+    line-height: 150%;
+}
+
+@mixin paragraph {
+    font-size: $font-size-small;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-large;
+}
+
+@mixin link {
+    font-size: $font-size-small;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-large;
+    @media #{$screen-tablet} {
+        font-size: $font-size-normal;
     }
 }
