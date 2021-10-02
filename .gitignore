@@ -8,6 +8,7 @@
 *.zip
 .DS_Store
 .idea/
-*.swp 
+*.swp
 node_modules/
 public/
+.editorconfig
