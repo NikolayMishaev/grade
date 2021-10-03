@@ -1,0 +1,52 @@
+.main {
+    &__content {
+        padding: rem(30px) $padding-small;
+
+        border-radius: $border-radius-medium;
+        background-color: $color-background-block;
+        box-shadow: $box-shadow;
+
+        @media #{$screen-tablet} {
+            padding: $padding-normal $padding-medium;
+        }
+
+        @media #{$screen-desktop} {
+            padding: $padding-normal $padding-huge;
+        }
+    }
+    &__item {
+        margin-right: rem(20px);
+
+        color: $heather;
+    }
+    &__link {
+        color: $heather;
+        &:hover {
+            color: $slate-gray;
+        }
+        &--active {
+            color: $slate-gray;
+        }
+    }
+    &__icon {
+        margin-left: rem(20px);
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+        padding: 3px 0;
+    }
+    &__navigation {
+        margin: 30px 0 15px;
+        @media #{$screen-desktop} {
+            margin-top: 0;
+        }
+    }
+    &__header {
+        margin: 0 20px;
+        @media #{$screen-desktop} {
+            margin: 0;
+        }
+    }
+}

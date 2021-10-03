@@ -8,7 +8,7 @@ $white: #fff;
 $heather: #bbc4d6;
 $slate-gray: #768298;
 $curious-blue: #34aadd;
-$wind-blue-yonder: #6680ae;
+$wild-blue-yonder: #6680ae;
 $tundora: #4b4b4b;
 $carnation: #f95a59;
 $cerise-red: #dc2c53;
@@ -60,8 +60,8 @@ $line-height-small: 117%;
     Breakpoints
 */
 
-$screen-tablet: "(min-width: 768px)";
-$screen-desktop: "(min-width: 1280px)";
+$screen-tablet: "(min-width: 640px)";
+$screen-desktop: "(min-width: 1024px)";
 
 /*
     Layout
@@ -93,8 +93,8 @@ $transition: all .5s;
     Radius
 */
 
-$border-radius-large: 8px;
-$border-radius-medium: 5px;
+$border-radius-large: rem(8px);
+$border-radius-medium: rem(5px);
 
 /*
     Box-shadows

@@ -1,0 +1,70 @@
+.button {
+    background-color: unset;
+    font-size: $font-size-small;
+    font-weight: $font-weight-medium;
+    line-height: 108%;
+
+    display: inline-block;
+
+    padding: rem(17.5px) rem(30px);
+
+    color: $color-text-main-inverse;
+    border: 0;
+    border-radius: $border-radius-medium;
+    transition: $transition;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    &:active {
+        opacity: .5;
+    }
+
+    &:disabled {
+        background-color:$athens-gray;
+        color: $heather;
+
+        &:hover {
+            cursor: auto;
+            background-color:$athens-gray;
+        }
+    }
+
+    &--blue {
+        background-color: $curious-blue;
+
+        &:hover {
+            background-color: $wild-blue-yonder;
+        }
+    }
+
+    &--small {
+        padding: rem(6px) rem(30px);
+        border-radius: $border-radius-medium 0 0 0;
+    }
+
+    &--no-fill {
+        padding: 0;
+        color: $curious-blue;
+
+
+        &:hover {
+            color: $wild-blue-yonder;
+        }
+        &:disabled {
+            background-color:transparent;
+
+            &:hover {
+                color: $heather;
+                background-color:transparent;
+            }
+        }
+    }
+
+    &--icon {
+        display: flex;
+        align-items: center;
+    }
+}

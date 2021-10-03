@@ -1,0 +1,54 @@
+.aside {
+    &__navigation {
+        border-radius: $border-radius-medium;
+        background-color: $white;
+        @media #{$screen-desktop} {
+            width: 286px;
+            margin-right: 32px;
+
+            border-radius: $border-radius-large;
+            background-color: unset;
+            background-color: $white;
+            box-shadow: $box-shadow;
+        }
+    }
+    &__button-mobile {
+        font-weight: 700;
+        line-height: 144%;
+
+        display: flex;
+        align-items: center;
+
+        margin: 0 auto;
+        padding: rem(15px) 0;
+        @media #{$screen-desktop} {
+            display: none;
+        }
+    }
+    &__list {
+        display: none;
+        @media #{$screen-desktop} {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__link {
+        font-size: $font-size-small;
+
+        display: block;
+
+        padding: 21px 30px;
+
+        color: $color-text-main;
+        &:hover {
+            background-color: $alabaster;
+
+            text-decoration-line: none;
+        }
+    }
+    &__item {
+        &--active {
+            font-weight: $font-weight-medium;
+        }
+    }
+}
