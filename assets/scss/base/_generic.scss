@@ -28,22 +28,6 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-main:not([class]) {
-    padding: rem(30px) $padding-small;
-
-    border-radius: $border-radius-medium;
-    background-color: $color-background-block;
-    box-shadow: $box-shadow;
-
-    @media #{$screen-tablet} {
-        padding: $padding-normal $padding-medium;
-    }
-
-    @media #{$screen-desktop} {
-        padding: $padding-normal $padding-huge;
-    }
-}
-
 h1 {
     margin-top: 0;
     margin-bottom: $margin-small;
@@ -84,82 +68,90 @@ ol {
     line-height: $line-height-small;
 
     margin: 0;
-    padding-left: rem(20px);
+    padding: 0;
 
-    counter-reset: li;
+    &:not([class]) {
+        padding-left: rem(20px);
 
-    @media #{$screen-tablet} {
-        font-size: $font-size-normal;
-    }
+        counter-reset: li;
 
-    & > li {
-        margin: $margin-very-small 0;
-
-        list-style: none;
-
-        & > ol > li::before {
-            content: counters(li, ".") "";
+        @media #{$screen-tablet} {
+            font-size: $font-size-normal;
         }
 
-        & > ol > li {
-            padding-left: rem(4px);
+        & > li {
+            margin: $margin-very-small 0;
 
-            & > ul {
-                padding-left: 35px;
+            list-style: none;
+
+            & > ol > li::before {
+                content: counters(li, ".") "";
+            }
+
+            & > ol > li {
+                padding-left: rem(4px);
+
+                & > ul {
+                    padding-left: 35px;
+                }
             }
         }
-    }
 
-    & > li::before {
-        display: inline-block;
+        & > li::before {
+            display: inline-block;
 
-        min-width: rem(14px);
-        margin-right: rem(10px);
+            min-width: rem(14px);
+            margin-right: rem(10px);
 
-        content: counters(li, ".") ". ";
-        counter-increment: li;
-        text-align: center;
+            content: counters(li, ".") ". ";
+            counter-increment: li;
+            text-align: center;
 
-        color: $cerise-red;
+            color: $cerise-red;
+        }
     }
 }
 
 ul {
     margin: 0;
-    padding-left: rem(20px);
+    padding: 0;
 
     list-style-type: none;
 
-    & li {
-        position: relative;
+    &:not([class]) {
+        padding-left: rem(20px);
 
-        margin: $margin-very-small 0;
-        padding-left: rem(15px);
+        & li {
+            position: relative;
 
-        & ul {
-            padding-left: 0;
+            margin: $margin-very-small 0;
+            padding-left: rem(15px);
 
-            list-style-type: none;
+            & ul {
+                padding-left: 0;
 
-            & li::before {
-                border: 1px solid $cerise-red;
-                background-color: transparent;
+                list-style-type: none;
+
+                & li::before {
+                    border: 1px solid $cerise-red;
+                    background-color: transparent;
+                }
             }
         }
-    }
 
-    & li::before {
-        position: absolute;
-        top: rem(5px);
-        left: 0;
+        & li::before {
+            position: absolute;
+            top: rem(5px);
+            left: 0;
 
-        width: rem(5px);
-        height: rem(5px);
+            width: rem(5px);
+            height: rem(5px);
 
-        content: "";
+            content: "";
 
-        border-radius: 50%;
-        background-color: $cerise-red;
+            border-radius: 50%;
+            background-color: $cerise-red;
+        }
     }
 }
 
