@@ -52,6 +52,7 @@
     font-size: $font-size-small;
     font-weight: $font-weight-regular;
     line-height: $line-height-large;
+
     @media #{$screen-tablet} {
         font-size: $font-size-normal;
     }
@@ -59,9 +60,15 @@
 
 @mixin link {
     font-size: $font-size-small;
-    // font-weight: $font-weight-regular;
     line-height: $line-height-large;
+
     @media #{$screen-tablet} {
         font-size: $font-size-normal;
     }
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
