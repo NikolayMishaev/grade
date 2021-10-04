@@ -1,0 +1,48 @@
+.form {
+    &__submit {
+        padding: 0;
+
+        border: none;
+        background-color: transparent;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &--search {
+            display: flex;
+            align-items: center;
+
+            margin: 0 rem(9px) 0 rem(14px);
+
+            color: $slate-gray;
+        }
+    }
+    &__search {
+        display: flex;
+        align-items: center;
+        border-radius:$border-radius-medium;
+
+        min-height: rem(40px);
+        @media #{$screen-tablet} {
+            border: rem(1px) solid $athens-gray;
+        }
+    }
+    &__input {
+        font-size: $font-size-small;
+
+        width: 100%;
+        padding: 0;
+
+        color: $color-text-main;
+        border: none;
+        outline: none;
+
+        &::placeholder {
+            color: $heather;
+        }
+    }
+    &__label--input {
+        flex: 1;
+    }
+}

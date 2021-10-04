@@ -1,5 +1,4 @@
 .button {
-    background-color: unset;
     font-size: $font-size-small;
     font-weight: $font-weight-medium;
     line-height: 108%;
@@ -8,10 +7,12 @@
 
     padding: rem(17.5px) rem(30px);
 
+    transition: $transition;
+
     color: $color-text-main-inverse;
     border: 0;
     border-radius: $border-radius-medium;
-    transition: $transition;
+    background-color: unset;
 
     &:hover {
         cursor: pointer;
@@ -23,12 +24,13 @@
     }
 
     &:disabled {
-        background-color:$athens-gray;
         color: $heather;
+        background-color: $athens-gray;
 
         &:hover {
             cursor: auto;
-            background-color:$athens-gray;
+
+            background-color: $athens-gray;
         }
     }
 
@@ -42,11 +44,13 @@
 
     &--small {
         padding: rem(6px) rem(30px);
+
         border-radius: $border-radius-medium 0 0 0;
     }
 
     &--no-fill {
         padding: 0;
+
         color: $curious-blue;
 
 
@@ -54,11 +58,11 @@
             color: $wild-blue-yonder;
         }
         &:disabled {
-            background-color:transparent;
+            background-color: transparent;
 
             &:hover {
                 color: $heather;
-                background-color:transparent;
+                background-color: transparent;
             }
         }
     }

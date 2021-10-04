@@ -60,8 +60,8 @@ $line-height-small: 117%;
     Breakpoints
 */
 
-$screen-tablet: "(min-width: 640px)";
-$screen-desktop: "(min-width: 1024px)";
+$screen-tablet: "(min-width: #{rem(768px)})";
+$screen-desktop: "(min-width: #{rem(1280px)})";
 
 /*
     Layout
@@ -100,8 +100,8 @@ $border-radius-medium: rem(5px);
     Box-shadows
 */
 
-$box-shadow: 0 12px 40px rgba(0, 0, 0, .03), 0 3px 10px rgba(164, 164, 164, .03);
-
+$box-shadow: 0 rem(12px) rem(40px) rgba(0, 0, 0, .03), 0 rem(3px) rem(10px) rgba(164, 164, 164, .03);
+$box-shadow-light: 0 rem(3px) rem(10px) rgba(0, 0, 0, .05);
 /*
     Z-indexes
 */
