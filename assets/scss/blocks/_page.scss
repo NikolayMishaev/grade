@@ -7,10 +7,21 @@
 
     &__content {
         flex: 1; //  Блок контента растягивается на весь экран
-        @media #{$screen-desktop} {
-            display: flex;
 
-            margin-top: 56px;
+        margin-top: rem(103px);
+        @media #{$screen-tablet} {
+            margin-top: rem(80px);
         }
+        @media #{$screen-desktop} {
+            margin-top: rem(130px);
+            display: flex;
+        }
+    }
+
+    &__header {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
     }
 }

@@ -92,7 +92,7 @@ ol {
                 padding-left: rem(4px);
 
                 & > ul {
-                    padding-left: 35px;
+                    padding-left: rem(35px);
                 }
             }
         }
@@ -133,7 +133,7 @@ ul {
                 list-style-type: none;
 
                 & li::before {
-                    border: 1px solid $cerise-red;
+                    border: rem(1px) solid $cerise-red;
                     background-color: transparent;
                 }
             }
@@ -159,9 +159,9 @@ blockquote {
     font-size: $font-size-small;
 
     margin: $margin-very-small 0 $margin-small;
-    padding: $padding-small rem(25);
+    padding: $padding-small rem(25px);
 
-    border-left: 5px solid $cerise-red;
+    border-left: rem(5px) solid $cerise-red;
     border-radius: $border-radius-medium;
     background-color: $color-background-main;
     @media #{$screen-tablet} {

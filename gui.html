@@ -10,7 +10,46 @@
     </head>
 
     <body class="page">
-        <header class="page__header header">header</header>
+
+        <header class="page__header header">
+            <div class="content">
+                <div class="header__content">
+                    <div class="header__column header__column--logo">
+                        <a href="#" class="header__link">
+                            <svg class="icon icon--logo">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header__column header__column--profile">
+                        <a class="header__profile profile" href="#">
+                            <svg class="profile__mobile icon icon--profile">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-profile"></use>
+                            </svg>
+                            <span class="profile__name">Константин</span>
+                            <div class="profile__avatar"></div>
+                        </a>
+                    </div>
+                    <div class="header__column header__column--search">
+                        <form action="POST" class="form">
+                            <div class="form__search">
+                                <label class="form__label">
+                                    <button type="submit" class="form__submit form__submit--search">
+                                        <svg class="icon icon--loupe">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-loupe"></use>
+                                        </svg>
+                                    </button>
+                                </label>
+                                <label class="form__label form__label--input">
+                                    <input type="text" class="form__input" placeholder="Найти...">
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+
         <div class="page__content content">
             <aside class="content__aside aside">
                 <nav class="aside__navigation">
@@ -257,8 +296,20 @@
                 <h2>Ссылки</h2>
                 <a href="#">Ссылка</a>
                 <h2>Поля ввода</h2>
-
-
+                <form action="POST" class="form">
+                    <div class="form__search">
+                        <label class="form__label">
+                            <button type="submit" class="form__submit form__submit--search">
+                                <svg class="icon icon--loupe">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-loupe"></use>
+                                </svg>
+                            </button>
+                        </label>
+                        <label class="form__label form__label--input">
+                            <input type="text" class="form__input" placeholder="Поиск...">
+                        </label>
+                    </div>
+                </form>
                 <h2>Кнопки</h2>
                 <h3>Кнопка стандартная</h3>
                 <button class="button button--blue">Кнопка стандартная</button>
