@@ -13,17 +13,23 @@
             display: flex;
             align-items: center;
 
-            margin: 0 rem(9px) 0 rem(14px);
+            margin: 0 rem(8px) 0 rem(16px);
 
             color: $slate-gray;
+
+            @media #{$screen-tablet} {
+                margin-left: rem(11px);
+            }
         }
     }
     &__search {
         display: flex;
         align-items: center;
-        border-radius:$border-radius-medium;
 
         min-height: rem(40px);
+
+        border-radius: $border-radius-medium;
+
         @media #{$screen-tablet} {
             border: rem(1px) solid $athens-gray;
         }

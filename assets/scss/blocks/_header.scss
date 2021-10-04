@@ -9,7 +9,6 @@
 
     &__content {
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
 
         height: 100%;
@@ -20,14 +19,22 @@
     }
     &__column {
         &--logo {
-            margin: 0 rem(50px) 0 rem(20px);
+            margin: rem(17px) rem(50px) 0 rem(20px);
+            @media #{$screen-tablet} {
+                margin-top: rem(24px);
+                margin-right: rem(48px);
+            }
+            @media #{$screen-desktop} {
+                margin-left: 0;
+                margin-right: rem(59px);
+            }
         }
 
         &--profile {
             display: flex;
             align-items: center;
 
-            margin: rem(16px) rem(20px) rem(16px) auto;
+            margin: rem(20px) rem(21px) rem(20px) auto;
             @media #{$screen-tablet} {
                 order: 1;
 
@@ -36,6 +43,10 @@
                 padding-left: rem(20px);
 
                 border-left: rem(1px) solid $athens-gray;
+            }
+            @media #{$screen-desktop} {
+                margin-right: 0;
+                margin-left: rem(59px);
             }
         }
 
@@ -52,14 +63,12 @@
                 padding: 0;
 
                 border-top: unset;
+                margin-top: rem(20px);
             }
         }
     }
     &__link {
         display: block;
-
-        width: rem(135px);
-        height: rem(30px);
     }
     &__profile {
         display: block;
