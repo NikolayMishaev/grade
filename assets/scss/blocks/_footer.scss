@@ -47,6 +47,7 @@
             flex-wrap: wrap;
             justify-content: start;
 
+            padding-top: rem(2px);
             padding-left: rem(40px);
         }
         @media #{$screen-desktop} {

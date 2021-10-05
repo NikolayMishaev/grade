@@ -18,12 +18,12 @@
         height: rem(10px);
     }
     &--logo {
-        width: rem(137px);
-        height: rem(32px);
+        width: rem(136px);
+        height: rem(33px);
     }
     &--logo-small {
-        width: rem(93px);
-        height: rem(18px);
+        width: rem(94px);
+        height: rem(19px);
 
         @media #{$screen-desktop} {
             width: rem(135px);
@@ -31,12 +31,12 @@
         }
     }
     &--youtube {
-        width: rem(23px);
-        height: rem(16px);
+        width: rem(27px);
+        height: rem(18px);
     }
     &--instagram {
-        width: rem(23px);
-        height: rem(23px);
+        width: rem(24px);
+        height: rem(24px);
     }
     &--star {
         width: rem(21px);
