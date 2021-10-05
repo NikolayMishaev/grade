@@ -1,0 +1,16 @@
+.social {
+    @include flex-center;
+
+    &__list {
+        flex-wrap: wrap;
+
+        @include flex-center;
+    }
+
+    &__item {
+        margin-right: rem(23px);
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

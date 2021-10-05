@@ -1,0 +1,47 @@
+.profile {
+    &__mobile {
+        @media #{$screen-tablet} {
+            display: none;
+        }
+    }
+    &__name {
+        display: none;
+
+        @media #{$screen-tablet} {
+            font-size: $font-size-small;
+            line-height: 120%;
+
+            display: block;
+            overflow: hidden;
+
+            max-width: rem(78px);
+            margin-right: rem(11px);
+            margin-top: rem(1px);
+            margin-left: auto;
+
+            transition: $transition;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+            color: $slate-gray;
+            &:hover {
+                cursor: pointer;
+
+                color: $color-text-main;
+            }
+        }
+    }
+    &__avatar {
+        display: none;
+
+        @media #{$screen-tablet} {
+            display: block;
+
+            width: rem(40px);
+            height: rem(40px);
+
+            border-radius: 50%;
+            background: url(/public/images/profile.jpg) no-repeat center/cover;
+        }
+    }
+}
