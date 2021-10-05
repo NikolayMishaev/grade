@@ -23,10 +23,10 @@
         }
     }
     &__search {
+        position: relative;
+
         display: flex;
         align-items: center;
-
-        min-height: rem(40px);
 
         border-radius: $border-radius-medium;
 
@@ -38,17 +38,104 @@
         font-size: $font-size-small;
 
         width: 100%;
+        min-height: rem(50px);
         padding: 0;
+        padding-left: rem(20px);
 
         color: $color-text-main;
-        border: none;
+        border: rem(1px) solid $athens-gray;
+        border-radius: $border-radius-medium;
         outline: none;
 
         &::placeholder {
             color: $heather;
         }
+        &:focus {
+            border: rem(1px) solid $slate-gray;
+        }
+        &:disabled {
+            background-color: $athens-gray;
+        }
+        &--search {
+            min-height: rem(40px);
+            padding-left: unset;
+            padding-left: rem(43px);
+
+            border: none;
+            @media #{$screen-tablet} {
+                padding-left: rem(38px);
+            }
+        }
     }
-    &__label--input {
-        flex: 1;
+    &__label {
+        font-size: $font-size-very-small;
+        line-height: 160%;
+
+        color: $tundora;
+        &--required {
+            &::after {
+                font-size: $font-size-very-small;
+
+                content: "*";
+
+                color: $red-orange;
+            }
+        }
+        &--input {
+            flex: 1;
+        }
+        &--search {
+            position: absolute;
+            top: 25%;
+            left: 0;
+        }
+    }
+    &__textarea {
+        font-size: $font-size-small;
+
+        width: 100%;
+        height: rem(100px);
+        padding: rem(17px) rem(20px);
+
+        resize: none;
+
+        color: $color-text-main;
+        border: rem(1px) solid $athens-gray;
+        border-radius: $border-radius-medium;
+        background-color: $color-background-block;
+        &::placeholder {
+            color: $heather;
+        }
+        &:focus {
+            border: rem(1px) solid $slate-gray;
+            outline: none;
+        }
+        &:disabled {
+            background-color: $athens-gray;
+        }
+    }
+    &__checkbox-label {
+        position: relative;
+        width: rem(20px);
+        height: rem(20px);
+        font-size: $font-size-small;
+        line-height: $line-height-small;
+    }
+    &__checkbox-input {
+        position: absolute;
+        top:0;
+        left:0;
+        width:0;
+        height: 0;
+    }
+    &__checkbox-icon {
+        width: rem(20px);
+        height: rem(20px);
+        @include flex-center;
+        background-color: $color-background-block;
+        color:$color-background-block;
+    }
+    &__input:checked + &__checkbox-icon {
+
     }
 }

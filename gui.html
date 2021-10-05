@@ -33,7 +33,7 @@
                     <div class="header__column header__column--search">
                         <form action="POST" class="form">
                             <div class="form__search">
-                                <label class="form__label">
+                                <label class="form__label form__label--search">
                                     <button type="submit" class="form__submit form__submit--search">
                                         <svg class="icon icon--loupe">
                                             <use xlink:href="public/images/icons/sprite.svg#icon-loupe"></use>
@@ -41,7 +41,7 @@
                                     </button>
                                 </label>
                                 <label class="form__label form__label--input">
-                                    <input type="text" class="form__input" placeholder="Найти...">
+                                    <input type="text" class="form__input form__input--search" placeholder="Найти...">
                                 </label>
                             </div>
                         </form>
@@ -298,7 +298,7 @@
                 <h2>Поля ввода</h2>
                 <form action="POST" class="form">
                     <div class="form__search">
-                        <label class="form__label">
+                        <label class="form__label form__label--search">
                             <button type="submit" class="form__submit form__submit--search">
                                 <svg class="icon icon--loupe">
                                     <use xlink:href="public/images/icons/sprite.svg#icon-loupe"></use>
@@ -306,9 +306,37 @@
                             </button>
                         </label>
                         <label class="form__label form__label--input">
-                            <input type="text" class="form__input" placeholder="Поиск...">
+                            <input type="text" class="form__input form__input--search" placeholder="Поиск...">
                         </label>
                     </div>
+                    <div class="form__text">
+                        <label for="i_1" class="form__label form__label--required">Обязательный инпут</label>
+                        <input id="i_1" type="text" class="form__input" placeholder="Плейсхолдер">
+                    </div>
+                    <div class="form__text">
+                        <label for="i_2" class="form__label">Неактивный инпут</label>
+                        <input id="i_2" type="text" class="form__input" disabled placeholder="Плейсхолдер">
+                    </div>
+                    <div class="form__text-area">
+                        <label for="ta_1" class="form__label form__label--required">Обязательное поле ввода</label>
+                        <textarea id="ta_1" type="text" class="form__textarea" placeholder="Многострочное поле ввода"></textarea>
+                    </div>
+                    <div class="form__text-area">
+                        <label for="ta_2" class="form__label">Неактивное поле ввода</label>
+                        <textarea id="ta_2" type="text" class="form__textarea" disabled placeholder="Многострочное поле ввода"></textarea>
+                    </div>
+                </form>
+                <h2>Чекбоксы</h2>
+                <form action="POST" class="form">
+                    <label class="form__checkbox-label">
+                        <input type="checkbox" class="form__checkbox-input">
+                        <div class="form__checkbox-icon">
+                            <svg class="icon icon--apply">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-apply"></use>
+                            </svg>
+                        </div>
+                        Активен, выбран
+                    </label>
                 </form>
                 <h2>Кнопки</h2>
                 <h3>Кнопка стандартная</h3>
