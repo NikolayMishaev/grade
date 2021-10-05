@@ -9,12 +9,16 @@
         flex: 1; //  Блок контента растягивается на весь экран
 
         margin-top: rem(103px);
+        margin-bottom: $margin-large;
+
         @media #{$screen-tablet} {
             margin-top: rem(80px);
         }
         @media #{$screen-desktop} {
-            margin-top: rem(130px);
             display: flex;
+
+            margin-top: rem(130px);
+            margin-bottom: rem(126px);
         }
     }
 
