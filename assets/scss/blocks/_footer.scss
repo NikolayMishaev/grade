@@ -1,0 +1,111 @@
+.footer {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    padding: $padding-small;
+
+    background-color: $color-background-block;
+    box-shadow: $box-shadow-light;
+
+    @media #{$screen-tablet} {
+        padding: rem(31px) $padding-small;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @media #{$screen-tablet} {
+            flex-direction: row;
+
+            height: 100%;
+        }
+    }
+    &__social-link {
+        width: rem(40px);
+        height: rem(40px);
+
+        color: $color-background-block;
+        border-radius: 50%;
+        background-color: $heather;
+
+        @include flex-center;
+        &:hover {
+            background-color: $slate-gray;
+        }
+    }
+    &__list {
+        flex-direction: column;
+
+        transition: $transition;
+
+        @include flex-center;
+
+        @media #{$screen-tablet} {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
+
+            padding-left: rem(40px);
+        }
+        @media #{$screen-desktop} {
+            margin-left: rem(40px);
+
+            border-left: rem(1px) solid #{$heather}99;
+        }
+    }
+    &__column {
+        &--links {
+            width: 100%;
+            margin: $margin-small 0;
+
+            border-top: rem(1px) solid $athens-gray;
+            border-bottom: rem(1px) solid $athens-gray;
+
+            @media #{$screen-tablet} {
+                display: flex;
+                flex: 1;
+
+                width: unset;
+                height: 100%;
+                margin: 0;
+
+                border: unset;
+            }
+        }
+    }
+    &__item {
+        margin-top: $margin-small;
+        &:last-child {
+            margin-bottom: $margin-small;
+        }
+        @media #{$screen-tablet} {
+            margin-top: 0;
+            margin-right: rem(30px);
+            &:last-child {
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__link {
+        line-height: $line-height-medium;
+
+        display: block;
+
+        text-align: center;
+
+        @media #{$screen-tablet} {
+            font-size: $font-size-small;
+        }
+    }
+    &__logo-link {
+        display: flex;
+
+        color: $heather;
+        &:hover {
+            color: $slate-gray;
+        }
+    }
+}

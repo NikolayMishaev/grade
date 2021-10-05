@@ -1,0 +1,21 @@
+.heading {
+    margin-top: 0;
+    margin-bottom: $margin-very-small;
+
+    &--h1 {
+        margin-bottom: $margin-small;
+
+        @include heading-huge;
+    }
+    &--h2 {
+        @include heading-large;
+    }
+    &--h3 {
+        margin-top: $margin-small;
+
+        @include heading-medium;
+    }
+    &--h4 {
+        @include heading-normal;
+    }
+}
