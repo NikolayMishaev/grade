@@ -15,8 +15,8 @@
             overflow: hidden;
 
             max-width: rem(78px);
-            margin-right: rem(11px);
             margin-top: rem(1px);
+            margin-right: rem(11px);
             margin-left: auto;
 
             transition: $transition;
@@ -35,13 +35,33 @@
         display: none;
 
         @media #{$screen-tablet} {
+            position: relative;
+
             display: block;
 
             width: rem(40px);
             height: rem(40px);
 
             border-radius: 50%;
-            background: url(/public/images/profile.jpg) no-repeat center/cover;
+            // background: url(/public/images/profile.jpg) no-repeat center/cover;
+            background-color: $athens-gray;
         }
+    }
+    &__icon {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+    &__photo {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
     }
 }

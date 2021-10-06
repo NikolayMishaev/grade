@@ -18,3 +18,4 @@ import './svg/burger-menu.svg';
 import './svg/profile.svg';
 import './svg/close.svg';
 import './svg/apply.svg';
+import './svg/profile-no-avatar.svg';
