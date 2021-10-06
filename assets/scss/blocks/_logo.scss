@@ -1,0 +1,10 @@
+.logo {
+    &__link {
+        display: flex;
+
+        color: $heather;
+        &:hover {
+            color: $slate-gray;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.list {
+    &__link {
+        line-height: $line-height-medium;
+
+        display: block;
+
+        text-align: center;
+
+        @media #{$screen-tablet} {
+            font-size: $font-size-small;
+        }
+    }
+}
