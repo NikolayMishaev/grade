@@ -90,23 +90,4 @@
             }
         }
     }
-    &__link {
-        line-height: $line-height-medium;
-
-        display: block;
-
-        text-align: center;
-
-        @media #{$screen-tablet} {
-            font-size: $font-size-small;
-        }
-    }
-    &__logo-link {
-        display: flex;
-
-        color: $heather;
-        &:hover {
-            color: $slate-gray;
-        }
-    }
 }

@@ -35,6 +35,7 @@
         }
     }
     &__input {
+        flex: 1;
         font-size: $font-size-small;
 
         width: 100%;
@@ -47,8 +48,5 @@
         &::placeholder {
             color: $heather;
         }
-    }
-    &__label--input {
-        flex: 1;
     }
 }
