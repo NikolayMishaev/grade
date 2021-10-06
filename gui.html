@@ -317,11 +317,11 @@
                         <label for="i_2" class="form__label">Неактивный инпут</label>
                         <input id="i_2" type="text" class="form__input" disabled placeholder="Плейсхолдер">
                     </div>
-                    <div class="form__text-area">
+                    <div class="form__text">
                         <label for="ta_1" class="form__label form__label--required">Обязательное поле ввода</label>
                         <textarea id="ta_1" type="text" class="form__textarea" placeholder="Многострочное поле ввода"></textarea>
                     </div>
-                    <div class="form__text-area">
+                    <div class="form__text">
                         <label for="ta_2" class="form__label">Неактивное поле ввода</label>
                         <textarea id="ta_2" type="text" class="form__textarea" disabled placeholder="Многострочное поле ввода"></textarea>
                     </div>
@@ -329,13 +329,63 @@
                 <h2>Чекбоксы</h2>
                 <form action="POST" class="form">
                     <label class="form__checkbox-label">
-                        <input type="checkbox" class="form__checkbox-input">
+                        <input type="checkbox" checked class="form__checkbox-input">
                         <div class="form__checkbox-icon">
                             <svg class="icon icon--apply">
                                 <use xlink:href="public/images/icons/sprite.svg#icon-apply"></use>
                             </svg>
                         </div>
                         Активен, выбран
+                    </label>
+                    <label class="form__checkbox-label">
+                        <input type="checkbox" class="form__checkbox-input">
+                        <div class="form__checkbox-icon">
+                            <svg class="icon icon--apply">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-apply"></use>
+                            </svg>
+                        </div>
+                        Активен, не выбран
+                    </label>
+                    <label class="form__checkbox-label">
+                        <input type="checkbox" checked disabled class="form__checkbox-input">
+                        <div class="form__checkbox-icon">
+                            <svg class="icon icon--apply">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-apply"></use>
+                            </svg>
+                        </div>
+                        Неактивен, выбран
+                    </label>
+                    <label class="form__checkbox-label">
+                        <input type="checkbox" disabled class="form__checkbox-input">
+                        <div class="form__checkbox-icon">
+                            <svg class="icon icon--apply">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-apply"></use>
+                            </svg>
+                        </div>
+                        Неактивен, не выбран
+                    </label>
+                </form>
+                <h2>Радиокнопки</h2>
+                <form action="POST" class="form">
+                    <label class="form__radio-label">
+                        <input type="radio" name="r1" checked class="form__radio-input">
+                        <div class="form__radio-icon"></div>
+                        Активна, выбрана
+                    </label>
+                    <label class="form__radio-label">
+                        <input type="radio" name="r1" class="form__radio-input">
+                        <div class="form__radio-icon"></div>
+                        Активна, не выбрана
+                    </label>
+                    <label class="form__radio-label">
+                        <input type="radio" name="r2" disabled checked class="form__radio-input">
+                        <div class="form__radio-icon"></div>
+                        Неактивна, выбрана
+                    </label>
+                    <label class="form__radio-label">
+                        <input type="radio" name="r2" disabled class="form__radio-input">
+                        <div class="form__radio-icon"></div>
+                        Неактивна, не выбрана
                     </label>
                 </form>
                 <h2>Кнопки</h2>

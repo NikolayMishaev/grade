@@ -90,6 +90,9 @@
             left: 0;
         }
     }
+    &__text {
+        margin: $margin-small 0;
+    }
     &__textarea {
         font-size: $font-size-small;
 
@@ -115,27 +118,98 @@
         }
     }
     &__checkbox-label {
-        position: relative;
-        width: rem(20px);
-        height: rem(20px);
         font-size: $font-size-small;
         line-height: $line-height-small;
+
+        position: relative;
+
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        margin: $margin-small 0;
     }
     &__checkbox-input {
         position: absolute;
-        top:0;
-        left:0;
-        width:0;
+        top: 0;
+        left: 0;
+
+        width: 0;
         height: 0;
     }
     &__checkbox-icon {
         width: rem(20px);
         height: rem(20px);
-        @include flex-center;
-        background-color: $color-background-block;
-        color:$color-background-block;
-    }
-    &__input:checked + &__checkbox-icon {
+        margin-right: rem(8px);
 
+        color: $color-background-block;
+        border: rem(1px) solid $curious-blue;
+        background-color: $color-background-block;
+
+        @include flex-center;
+    }
+    &__checkbox-input:checked + &__checkbox-icon {
+        background-color: $curious-blue;
+    }
+    &__checkbox-input:disabled + &__checkbox-icon {
+        color: $athens-gray;
+        border: rem(1px) solid $heather;
+        background-color: $athens-gray;
+    }
+    &__checkbox-input:disabled:checked + &__checkbox-icon {
+        color: $heather;
+        border: rem(1px) solid $heather;
+        background-color: $athens-gray;
+    }
+    &__radio-input {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 0;
+        height: 0;
+    }
+    &__radio-label {
+        font-size: $font-size-small;
+        line-height: $line-height-small;
+
+        position: relative;
+
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        margin: $margin-small 0;
+    }
+    &__radio-icon {
+        position: relative;
+
+        width: rem(20px);
+        height: rem(20px);
+        margin-right: rem(8px);
+
+        border: rem(1px) solid $curious-blue;
+        border-radius: 50%;
+    }
+    &__radio-input:checked + &__radio-icon:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: rem(10px);
+        height: rem(10px);
+
+        content: "";
+        transform: translate(-50%, -50%);
+
+        border-radius: 50%;
+        background-color: $curious-blue;
+    }
+    &__radio-input:disabled + &__radio-icon {
+        border: rem(1px) solid $heather;
+        background-color: $athens-gray;
+    }
+    &__radio-input:disabled:checked + &__radio-icon:before {
+        background-color: $heather;
     }
 }
