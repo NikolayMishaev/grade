@@ -1,0 +1,11 @@
+.description {
+    &__title {
+        margin-bottom: rem(20px);
+        @media #{$screen-tablet} {
+            margin-bottom: rem(21px);
+        }
+    }
+    &__text {
+        font-size: $font-size-small;
+    }
+}

@@ -13,6 +13,16 @@
         @media #{$screen-desktop} {
             padding: $padding-normal $padding-huge;
         }
+        &--page-index {
+            background-color: $color-background-main;
+            border-radius: none;
+            box-shadow: none;
+            padding: 0;
+            margin: 0 rem(20px);
+            @media #{$screen-desktop} {
+                margin: 0;
+            }
+        }
     }
     &__item {
         margin-right: rem(20px);
@@ -47,6 +57,17 @@
         margin: 0 rem(20px);
         @media #{$screen-desktop} {
             margin: 0;
+        }
+    }
+    &__description {
+        margin: rem(40px) 0;
+        @media #{$screen-tablet} {
+            margin-top: $margin-normal;
+            max-width: rem(600px);
+        }
+        @media #{$screen-desktop} {
+            margin-top: rem(61px);
+            max-width: rem(621px);
         }
     }
 }
