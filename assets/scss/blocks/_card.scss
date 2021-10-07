@@ -1,0 +1,30 @@
+.card {
+    border-radius: $border-radius-large;
+    background-color: $color-background-block;
+    &__text {
+        font-size: $font-size-small;
+
+        color: $slate-gray;
+    }
+    &__date {
+        font-size: $font-size-very-small;
+
+        margin: 0 auto 0 0;
+
+        color: $slate-gray;
+    }
+    &__info {
+        display: flex;
+    }
+    &__description {
+        padding: 20px 20px 16px;
+        @media #{$screen-tablet} {
+            padding: 10px 20px 15px;
+        }
+    }
+    &__image {
+        border-radius: $border-radius-large $border-radius-large 0 0;
+        min-height: rem(159px);
+        object-fit: cover;
+    }
+}

@@ -58,7 +58,7 @@ h4 {
 
 p {
     margin: $margin-very-small 0;
-
+    letter-spacing: em(.16px);
     @include paragraph;
 }
 

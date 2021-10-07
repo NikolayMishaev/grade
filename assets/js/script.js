@@ -12,6 +12,7 @@ window.$ = $;
  */
 // Пример подключения модуля
 // import myModule from './modules/my-module-function';
+import tabs from './modules/tabs';
 
 const app = {
     ready() {
@@ -19,6 +20,7 @@ const app = {
         // pluginName();
 
         // myModule();
+        tabs();
     },
 
     load() {

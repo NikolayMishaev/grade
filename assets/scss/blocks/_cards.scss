@@ -1,0 +1,18 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: rem(-10px);
+    @media #{$screen-desktop} {
+        margin: rem(-16px);
+    }
+    &__item {
+        padding: rem(10px);
+        @media #{$screen-tablet} {
+            width: percentage(1 / 2);
+        }
+        @media #{$screen-desktop} {
+            width: percentage(1 / 3);
+            padding: rem(16px);
+        }
+    }
+}

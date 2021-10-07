@@ -1,0 +1,8 @@
+.container {
+    &__tabs {
+        margin-bottom: 30px;
+        @media #{$screen-tablet} {
+            margin-bottom: 51px;
+        }
+    }
+}
