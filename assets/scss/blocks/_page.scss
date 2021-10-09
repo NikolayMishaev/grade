@@ -4,13 +4,8 @@
     flex-direction: column;
 
     min-height: 100vh; // минимальная высота страницы
-
     &__content {
-        flex: 1; //  Блок контента растягивается на весь экран
-
-        margin-top: rem(103px);
-        margin-bottom: $margin-large;
-
+        flex: 1; //  Блок контента растягивается на весь экран  margin-top: rem(103px);  margin-bottom: $margin-large;
         @media #{$screen-tablet} {
             margin-top: rem(80px);
         }
