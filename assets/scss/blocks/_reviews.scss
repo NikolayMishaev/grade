@@ -1,0 +1,18 @@
+.reviews {
+    font-size: $font-size-very-small;
+    color: $slate-gray;
+    &__list {
+        display: flex;
+    }
+    &__counter {
+        margin-left: 6px;
+    }
+    &__item {
+        margin-right: 12px;
+        display: flex;
+        align-items: center;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
