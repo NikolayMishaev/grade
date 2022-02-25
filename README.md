@@ -12,12 +12,13 @@
 ![]()
 
 ## Технологии
-  - HTML
-  - CSS
-  - JS
-  - jQuery
-  - Sass
-  - Webpack
+- HTML
+- CSS
+- JS
+- jQuery
+- Sass
+- Webpack
+- БЭМ
 
 ## Функциональность
 
