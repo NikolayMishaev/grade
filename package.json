@@ -1,6 +1,9 @@
 {
     "name": "grade",
     "version": "1.0.0",
+    "engines": {
+        "node": "14.15.5"
+    },
     "description": "grade frontend",
     "main": "script.js",
     "scripts": {
