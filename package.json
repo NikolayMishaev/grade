@@ -7,9 +7,9 @@
     "description": "grade frontend",
     "main": "script.js",
     "scripts": {
-        "start": "webpack --env.mode=development --progress --watch",
+        "dev": "webpack --env.mode=development --progress --watch",
         "build": "webpack --env.mode=production",
-        "server": "node server.js"
+        "start": "node server.js"
     },
     "author": "",
     "license": "ISC",
